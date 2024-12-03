@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="styles-form.css" />
+</head>
+<div class="landing-page">
+    <header>
+<div class="container">
+<a href="./home.html" class="logo">70717 <b>Illia Tseiko</b></a>
+<ul class="links">
+    <li><a href="./projects.html">Projects</a></li>
+    <li id='contactme'><a href="./contact-me.html">Contact me</a></li>
+</ul>
+</div>
+    </header>
+    
+  </div>
+<div class="contact-form">
+<div class="mail">
+<label for="mail">Your mail</label>
+<input id="mail" type="text">
+</div>
+<div class="company">
+<label for="company">Company name</label>
+<input id="company" type="text">
+</div>
+<div class="position">
+<label for="position">Position</label>
+<input id="position" type="text">
+</div>
+<div class="comments">
+<label for="comments">Anything else</label>
+<textarea id="comments" ></textarea>
+</div>
+<div class="button">
+<button class="submit-button" type="button" onclick="showSuccessMessage()">Send</button>
+<p id="success-message" style="display: none; color: green; font-size: 16px; margin-top: 10px;">Application was successfully sent!</p>
+</div>
+
+</div>
+
+
+
+ <footer>
+   <div class="menu">
+     <div class="shab">
+       <h2 class="sh">Shortly about me</h2>
+       <p>Studying different programming techonologies for 3 years. <br>Know the basics of C, C++, C#, Kotlin, SQL.<br> Have a pretty good understanding of data structures and algorithms. <br>Good communication skills and real experience working in a team. <br>Enjoy to face challenges and go through them.</p>
+     </div>
+     <div class="pers">
+     <h2>Personal info</h2>
+  <p><strong>University:</strong> Vistula University student</p>
+  <p><strong>Phone:</strong> +48 44444444444</p>
+  <p><strong>Hobby:</strong> Meow</p>
+     </div>
+      <div class="ex">
+         
+        <a href="https://www.instagram.com/iliich_ts/" target="_blank" class="insta">
+        <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        
+          <a href="https://www.facebook.com/profile.php?id=61556746081908" target="_blank" class="fb">
+        <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/illia-tseiko-3594b8301/" target="_blank" class="linkedin">
+        <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        
+        
+        <script>
+function showSuccessMessage() {
+const message = document.getElementById('success-message');
+message.style.display = 'block'; 
+setTimeout(() => {
+  message.style.display = 'none'; 
+}, 3000);
+}
+</script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
+   </div>
+ </footer>
+</div>

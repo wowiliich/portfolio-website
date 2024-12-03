@@ -1,0 +1,252 @@
+*{ 
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+  }
+  
+  .links li a {
+    color: #5d5d5d;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .links li:not(#contactme) a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 0;
+    height: 2px;
+    background-color: #5d5d5d;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .links li:not(#contactme) a:hover::after {
+    width: 100%; 
+  }
+  
+  
+  #contactme {
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #contactme a {
+    color: #FFF;
+    background-color: #2b1700;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 30px;
+  }
+  
+  #contactme:hover {
+    transform: scale(1.2); 
+  }
+  
+  
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(#fff, #2b1700); 
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    
+  }
+  
+  .landing-page header {
+    min-height: 80px;
+    display: flex;
+  }
+  
+    .landing-page header {
+      min-height: auto;
+      display: initial;
+    }
+  
+  .landing-page header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .landing-page header .logo {
+    color: #5d5d5d;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .landing-page header .logo::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 2px;
+    background-color: #5d5d5d;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .landing-page header .logo:hover::after{
+    width: 100%;
+  }
+  
+  .landing-page header .links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .landing-page header .links li {
+    margin-left: 30px;
+    color: #5d5d5d;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .landing-page header .links li:last-child {
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: #2b1700;
+  }
+  
+  .landing-page{
+  margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+  
+  .contact-form{
+    margin-top:0;
+    margin-left:400px;
+    margin-right:400px;
+    width: 1000px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    text-align: center;
+    position: center;
+   
+  }
+  
+  label {
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .contact-button {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+    transition: 0.3s all;
+  }
+  
+  input:focus, textarea:focus{
+    border-bottom: 2px solid black;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .submit-button {
+    align-items: center;
+    width: 15%;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #2b1700;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s all;
+  }
+  
+  .submit-button:hover {
+    background-color: #a0522d;
+    transform: scale(1.2);
+  }
+  
+  #success-message {
+    color: green;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  
+  /* End Landing Page */
+  
+  footer {
+    font-family: 'Lucida Console', Monospace;
+    color: #fff;
+    margin-top: 80px;
+    padding: 40px 0;
+  }
+  
+  footer .menu{
+    padding: 100px;
+    line-height:35px;
+    font-size: 15px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+  }
+  
+  ion-icon{
+  font-size: 50px;
+    color: #fff;
+    transition: 0.3s all;
+  }
+  
+  .insta:hover ion-icon {
+     color:red;
+  }
+  
+  
+  .fb:hover ion-icon {
+    color: #0f52ba;
+  }
+  
+  .linkedin:hover ion-icon {
+  color: #0080fe;
+  }
